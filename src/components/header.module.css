@@ -1,7 +1,7 @@
 .header {
     width: 100%;
-    font-family: sans-serif;
-    background: linear-gradient(180deg, #f8f9fa 0%, #f8f9fa 60%, transparent 100%);
+    font-family: 'Space Mono', monospace;
+    background: linear-gradient(180deg, #191c24 0%, #191c24 60%, transparent 100%);
     height: 80px;
     position: fixed;
     left: 0;
