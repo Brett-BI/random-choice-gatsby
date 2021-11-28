@@ -7,7 +7,7 @@ import Article from '../../components/article';
 export default function BlogPost({ data }) {
     return (
         <Layout>
-            <Article title={data.contentfulArticle.title} date={data.contentfulArticle.updatedAt} content={data.contentfulArticle.body.childMdx.body} />
+            <Article title={data.contentfulArticle.title} date={data.contentfulArticle.updatedAt} author={data.contentfulArticle.author} content={data.contentfulArticle.body.childMdx.body} />
         </Layout>
     )
 };
@@ -18,6 +18,11 @@ export const BlogQuery = graphql`
             slug
             id
             title
+            author {
+                id
+                name
+                email
+            }
             updatedAt
             body {
                 childMdx {

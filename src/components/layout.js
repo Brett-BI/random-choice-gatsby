@@ -6,9 +6,9 @@ import { container } from './layout.module.css';
 
 export default function Layout({ children }) {
     return (
-        <div className={ container }>
+        <main className={ container }>
             <Header />
             { children }
-        </div>
+        </main>
     )
 }

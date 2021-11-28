@@ -1,2 +1,2 @@
-import '@fontsource/space-mono';
+import '@fontsource/fira-mono';
 import '@fontsource/barlow';

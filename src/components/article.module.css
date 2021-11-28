@@ -1,3 +1,70 @@
-.article {
-    width: 60%;
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .article {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .article {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .article {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .article {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .article {
+        width: 60%;
+    }
+}
+
+
+.articleTitle {
+    font-family: "Fira Mono", monospace;
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: .5rem;
+}
+
+.articleMeta {
+    /* background-color: #fcca46; */
+    background-color: #212530;
+    color: #191c24;
+    /* border-radius: .15rem; */
+    font-family: "Fira Mono", monospace;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-left: 3px solid #fcca46;
+    border-right: 3px solid #fcca46;
+}
+
+.articleMetaItem {
+    color: #191c24;
+    display: flex; 
+    flex-direction: column;
+}
+
+.metaItemTitle {
+    display: block;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-top: -4px;
+    color: #434b60; /* 3b4154 */
+}
+
+.metaItemContent {
+    display: block;
+    color: #ccc;
 }

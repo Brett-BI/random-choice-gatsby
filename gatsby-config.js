@@ -14,8 +14,22 @@ module.exports = {
         accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
         spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
       },
+    }, 
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: 'carbon',
+              theme: 'one-light',
+              lineNumbers: true
+            }
+          }
+        ],
+      }
     },
-    "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -23,6 +37,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
+    }
   ],
 };

@@ -1,15 +1,27 @@
 import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
-import { article } from './article.module.css';
+import { article, articleTitle, articleMeta, articleMetaItem, metaItemTitle, metaItemContent } from './article.module.css';
 
-export default function Article({ title, date, content }) {
+deckDeckGoHighlightElement();
+
+export default function Article({ title, date, author, content }) {
     return (
         <article className={ article }>
-            <h2>{ title }</h2>
-            <p>Updated: { date }</p>
+            <span className={ articleTitle }>{ title }</span>
+            <div className={ articleMeta }>
+                <div className={ articleMetaItem }>                    
+                    <span className={ metaItemContent }>{ author.name }</span>
+                    <span className={ metaItemTitle }>Author</span>
+                </div>
+                <div className={ articleMetaItem }>                    
+                    <span className={ metaItemContent }>{ date }</span>
+                    <span className={ metaItemTitle }>Updated</span>
+                </div>            
+            </div>
             <MDXRenderer>
-                { content }
+                { content }                
             </MDXRenderer>
         </article>
     )
