@@ -11,6 +11,8 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .article {
         width: 80%;
+        height: 100%;
+        padding-bottom: 3rem;
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
@@ -60,8 +62,17 @@
     display: block;
     font-weight: bold;
     font-size: .8rem;
-    margin-top: -4px;
+    margin-top: 0;
     color: #434b60; /* 3b4154 */
+}
+
+.metaItemTitleRight {
+    display: block;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-top: 0;
+    color: #434b60; /* 3b4154 */
+    text-align: right;
 }
 
 .metaItemContent {
