@@ -227,9 +227,14 @@ ol {
     margin-bottom: .75rem; 
 }
 
-li::before {
+ul > li::before {
     content: "";
     padding-left: .75rem;
+}
+
+ol > li::before {
+    content: "";
+    padding-left: 1rem;
 }
 
 deckgo-highlight-code {

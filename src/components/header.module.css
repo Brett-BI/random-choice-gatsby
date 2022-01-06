@@ -11,6 +11,17 @@
     z-index: 1000;
 }
 
+/* .header {
+    width: 80%;
+    height: 50px; */
+    /* border-bottom: 1px solid #fcca46; */
+    /* background: #212530ee; */
+    /* border-radius: 4px; */
+    /*position: fixed;
+    top: 1rem;
+    z-index: 1000;
+}*/
+
 .nav {
     top: 1rem;
     left: 1rem;
