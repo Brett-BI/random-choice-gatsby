@@ -35,6 +35,7 @@
     display: block;
     text-align: center;
     padding: .5rem;
+    line-height: 3rem !important;
 }
 
 .articleMeta {
