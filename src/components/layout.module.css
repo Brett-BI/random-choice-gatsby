@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
     font-weight: normal;
 }
@@ -79,10 +79,8 @@ body {
 }
 
 h1 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: 1rem;
+    font-size: 2.4rem;
+    margin-top: 1.1rem;
     margin-bottom: .7rem;
 }
 
@@ -90,14 +88,12 @@ h1::before {
     content: "#";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .35rem;
+    margin-right: 1rem;
 }
 
 h2 {
-    font-size: 2.3rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: .9rem;
+    font-size: 2.1rem;
+    margin-top: 1rem;
     margin-bottom: .6rem;
 }
 
@@ -105,14 +101,12 @@ h2::before {
     content: "##";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .35rem;
+    margin-right: 1rem;
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: .8rem;
+    font-size: 1.8rem;
+    margin-top: .9rem;
     margin-bottom: .5rem;
 }
 
@@ -120,14 +114,12 @@ h3::before {
     content: "###";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .3rem;
+    margin-right: .95rem;
 }
 
 h4 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: .7rem;
+    font-size: 1.5rem;
+    margin-top: .8rem;
     margin-bottom: .4rem;
 }
 
@@ -135,14 +127,12 @@ h4::before {
     content: "####";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .3rem;
+    margin-right: .95rem;
 }
 
 h5 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: .6rem;
+    font-size: 1.3rem;
+    margin-top: .7rem;
     margin-bottom: .3rem;
 }
 
@@ -150,14 +140,12 @@ h5::before {
     content: "#####";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .25rem;
+    margin-right: .9rem;
 }
 
 h6 {
     font-size: 1.1rem;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    margin-top: .5rem;
+    margin-top: .6rem;
     margin-bottom: .2rem;
 }
 
@@ -165,33 +153,52 @@ h6::before {
     content: "######";
     color: #fcca46;
     font-size: .8em;
-    margin-right: .25rem;
+    margin-right: .9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: "Fira Mono", monospace;
+    /* word-spacing: .01rem; */
 }
 
 p {
     font-size: 1.1rem;
     margin-top: .25rem;
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
     word-spacing: .1rem;
+    letter-spacing: .025ch;
     line-height: 1.3rem;
 }
 
 span {
     font-size: 1.1rem;
+    word-spacing: .1rem;
+    letter-spacing: .025ch;
+    line-height: 1.3rem;
 }
 
 strong {
     font-size: 1.1rem;
+    word-spacing: .1rem;
+    letter-spacing: .025ch;
+    line-height: 1.3rem;
 }
 
 em {
     font-size: 1.1rem;
+    word-spacing: .1rem;
+    letter-spacing: .025ch;
+    line-height: 1.3rem;
 }
 
 a {
     font-size: 1.1rem;
     color: #fcca46;
     text-decoration: none;
+    word-spacing: .1rem;
+    letter-spacing: .025ch;
+    line-height: 1.3rem;
 }
 
 a::before {
@@ -218,6 +225,7 @@ ul {
     padding-left: .5rem;
     margin-top: .25rem;
     margin-bottom: .75rem;
+    font-size: 1.1rem;
 }
 
 ol {
@@ -225,6 +233,14 @@ ol {
     padding-left: .5rem;
     margin-top: .25rem;
     margin-bottom: .75rem; 
+    font-size: 1.1rem;
+}
+
+li {
+    font-size: 1.1rem;
+    word-spacing: .1rem;
+    letter-spacing: .025ch;
+    line-height: 1.3rem;
 }
 
 ul > li::before {
