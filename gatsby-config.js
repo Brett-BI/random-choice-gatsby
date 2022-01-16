@@ -22,10 +22,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              terminal: 'carbon',
-              theme: 'one-light',
+              terminal: 'none',
+              theme: 'material',
               lineNumbers: true
-            }
+            } // nord, lucario, material
           }
         ],
       }

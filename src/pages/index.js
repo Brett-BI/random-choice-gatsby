@@ -10,7 +10,7 @@ export default function IndexPage({ data }) {
         {
           data.allContentfulArticle.nodes.map(node => (
               <article key={ node.id }>
-                  <h2><Link to={ `articles/${node.slug}` }>{ node.title }</Link></h2>
+                  <h1><Link to={ `articles/${node.slug}` }>{ node.title }</Link></h1>
               </article>
           ))
         }

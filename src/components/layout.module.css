@@ -239,5 +239,11 @@ ol > li::before {
 
 deckgo-highlight-code {
     margin-top: .25rem;
-    margin-bottom: .75rem;
+    margin-bottom: .75rem;    
+}
+
+deckgo-hightlight-code > code {
+    padding: 1.5rem !important;
+    border-left: 3px solid #fcca46 !important;
+    border-right: 3px solid #fcca46 !important;
 }
