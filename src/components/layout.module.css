@@ -7,15 +7,16 @@
 }
 
 body {
-    background-color: #191c24;
+    background-color: #f8f9fa;
+    color: #444;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .container {
         width: 100%;
         /* background-color: #f8f9fa; */
-        background-color: #191c24;
-        color: #ccc;
+        background-color: #fff;
+        color: #444;
         font-family: "Barlow", sans-serif;
         position: relative;
         padding: 80px 0;
@@ -28,7 +29,7 @@ body {
         width: 100%;
         /* background-color: #f8f9fa; */
         background-color: #191c24;
-        color: #ccc;
+        color: #444;
         font-family: "Barlow", sans-serif;
         position: relative;
         padding: 80px 0;
@@ -41,8 +42,8 @@ body {
         width: 100%;
         box-sizing: border-box;
         /* background-color: #f8f9fa; */
-        background-color: #191c24;
-        color: #ccc;
+        background-color: #fff;
+        color: #444;
         font-family: "Barlow", sans-serif;
         position: relative;
         padding: 80px 0;
@@ -54,8 +55,8 @@ body {
     .container {
         width: 100%;
         /* background-color: #f8f9fa; */
-        background-color: #191c24;
-        color: #ccc;
+        background-color: #fff;
+        color: #444;
         font-family: "Barlow", sans-serif;
         position: relative;
         padding: 80px 0;
@@ -68,13 +69,14 @@ body {
     .container {
         width: 100%;
         /* background-color: #f8f9fa; */
-        background-color: #191c24;
-        color: #ccc;
+        background-color: #f8f9fa;
+        color: #444;
         font-family: "Barlow", sans-serif;
         position: relative;
         padding: 80px 0;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: auto 200px minmax(500px, 1000px) 200px auto;
+        column-gap: 24px;
     }
 }
 
@@ -86,7 +88,7 @@ h1 {
 
 h1::before {
     content: "#";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: 1rem;
 }
@@ -99,7 +101,7 @@ h2 {
 
 h2::before {
     content: "##";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: 1rem;
 }
@@ -112,7 +114,7 @@ h3 {
 
 h3::before {
     content: "###";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: .95rem;
 }
@@ -125,7 +127,7 @@ h4 {
 
 h4::before {
     content: "####";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: .95rem;
 }
@@ -138,7 +140,7 @@ h5 {
 
 h5::before {
     content: "#####";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: .9rem;
 }
@@ -151,7 +153,7 @@ h6 {
 
 h6::before {
     content: "######";
-    color: #fcca46;
+    color: #ffd43b;
     font-size: .8em;
     margin-right: .9rem;
 }
@@ -194,11 +196,13 @@ em {
 
 a {
     font-size: 1.1rem;
-    color: #fcca46;
+    font-weight: bold;
+    color: #3571a3;
     text-decoration: none;
     word-spacing: .1rem;
     letter-spacing: .025ch;
     line-height: 1.3rem;
+    cursor: pointer;
 }
 
 a::before {
@@ -260,6 +264,6 @@ deckgo-highlight-code {
 
 deckgo-hightlight-code > code {
     padding: 1.5rem !important;
-    border-left: 3px solid #fcca46 !important;
-    border-right: 3px solid #fcca46 !important;
+    border-left: 3px solid #ffd43b !important;
+    border-right: 3px solid #ffd43b !important;
 }

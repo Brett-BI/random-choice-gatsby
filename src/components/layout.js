@@ -6,9 +6,12 @@ import { container } from './layout.module.css';
 
 export default function Layout({ children }) {
     return (
-        <main className={ container }>
+        <>
             <Header />
-            { children }
-        </main>
+            <main className={ container }>
+                { children }
+            </main>
+        </>
+        
     )
 }
