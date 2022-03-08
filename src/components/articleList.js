@@ -7,12 +7,14 @@ import {
     articleItems, 
     articleListItem,
     articleListItem_content,
-    articleListHeader 
+    articleListHeader,
+    articleLatestHeader
 } from './articleList.module.css';
 
 export function ArticleList({ articles }) {
     return (
         <div className={articleListContainer}>
+            <span className={ articleLatestHeader }>Latest</span>
             <div className={articleItemContainer}>
                 <div className={articleItems}>
                     { articles.map(article => 

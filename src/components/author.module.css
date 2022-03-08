@@ -34,7 +34,7 @@
     transform: scale(1.01);
 }
 
-.authorBio {
+.authorBio > p {
     font-size: .8rem;
 }
 
@@ -69,8 +69,8 @@
     list-style: none;
 }
 
-.authorSocials {
-    
+.authorSocials > li > a {
+    font-size: .8rem;
 }
 
 .authorSocialLI {

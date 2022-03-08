@@ -34,10 +34,16 @@ const days = [
 ]
 
 export default function Article({ title, date, author, content }) {
+    console.log(author);
     let postDate = new Date(date);
     return (
         <React.Fragment>
-            <Author />
+            <Author name={ author.name }
+                bio={ author.bio.childMdx.body }
+                imageUrl={ author.profilePicture.file.url }
+                linkedIn={ author.linkedIn }
+                github={ author.github }
+                fiverr={ author.fiverr } />
             <article className={ article }>
                 <div className={ articleDate }>       
                     <div>
